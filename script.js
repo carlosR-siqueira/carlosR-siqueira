@@ -8,12 +8,10 @@ openBtn.addEventListener("click", openMenu)
 closeBtn.addEventListener("click", closeMenu)
 
 
-
-
 function openMenu() {
     headerList.style.top = "-4.3%"
     openBtn.style.display = 'none'
-    closeBtn.style.display = "block"  
+    closeBtn.style.display = "block"
 }
 
 function closeMenu() {
@@ -27,23 +25,6 @@ function clickMenu() {
     closeBtn.style.display = "none"
     openBtn.style.display = 'block'
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 formSubmitBtn.addEventListener("click", submitBtn)
 
@@ -75,7 +56,7 @@ function inputBlur() {
     let formInputName = document.querySelector(".input-nome")
     let formInputEmail = document.querySelector(".input-email")
     let formInputMsg = document.querySelector(".input-msg")
-    
+
 
     formInputName.removeAttribute('id', 'error')
     formInputEmail.removeAttribute('id', 'error')

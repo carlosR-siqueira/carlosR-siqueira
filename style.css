@@ -210,7 +210,8 @@ a {
   margin-bottom: 15px;
 
 }
-.curriculum-button:hover{
+
+.curriculum-button:hover {
   scale: 1.1;
   transition: all 200ms;
 }
@@ -655,7 +656,7 @@ a {
     cursor: pointer;
     color: #fffafa;
     font-size: 2rem;
-    
+
 
 
 
@@ -670,7 +671,7 @@ a {
     cursor: pointer;
     font-size: 2rem;
     color: #fffafa;
-  
+
 
   }
 
@@ -690,7 +691,7 @@ a {
     box-shadow: 10px 10px 10px #00000075;
     border-radius: 7px;
     width: 100%;
-    
+
     text-align: center;
     gap: 30px;
     padding: 20px 0;
@@ -787,7 +788,7 @@ a {
     width: 40px;
   }
 
-  .curriculum-button:hover{
+  .curriculum-button:hover {
     scale: 1;
   }
 
@@ -862,7 +863,7 @@ a {
     border: solid 1px #D6D6D6;
     scale: 1;
     transition: none;
-  
+
   }
 
   .input-email,
