@@ -47,10 +47,6 @@ function submitBtn() {
     }
 }
 
-
-
-
-
 function inputBlur() {
 
     let formInputName = document.querySelector(".input-nome")
