@@ -1,0 +1,138 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    margin: 0%;
+    padding: 0%;
+  
+  
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  #projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1f1e1e;
+    text-align: center;
+    color: #42C920;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  
+  #projetos p {
+    font-weight: normal;
+    color: #d6d6d663;
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .projetos-content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 50px;
+    color: #d6d6d663;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  
+  
+  }
+  
+  .projetos-content ul li {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  
+  
+  .projetos-content:hover :not(:hover):not(img):not(label):not(a):not(header) {
+    opacity: 0.4;
+    transition: all 500ms;
+  }
+  
+  .projetos-content ul li:hover {
+    scale: 1.1;
+    color: #f5f5f5e5;
+    cursor: pointer;
+  
+  
+  }
+  
+  .projeto-item {
+    width: 250px;
+    height: 150px;
+    border-radius: 7px;
+    margin: 25px;
+    background-color: #252628;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  
+  
+  #ul-projetos-mobile,
+  .projetos-verTodos-btn {
+    display: none;
+  }
+  
+  .btn-voltar-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .projetos-voltar-btn {
+    display: block;
+    width: 250px;
+    padding: 5px;
+    border: solid 1px #D6D6D6;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #D6D6D6;
+    margin: 25px 0;
+    cursor: pointer;
+  }
+  .projetos-voltar-btn:hover {
+    color: #42C920;
+    border: solid 1px #42C920;
+    scale: 1.1;
+    transition: all 200ms;
+  
+  }
+
+  @media(max-width: 770px) {
+    .projetos-content:hover :not(:hover):not(img):not(label):not(a):not(header) {
+        opacity: 1;
+        transition: none;
+      }
+    
+      .projetos-content ul li:hover {
+        scale: 1;
+        color: #f5f5f5e5;
+        cursor: pointer;
+      }
+      #projetos {
+        padding-top: 30px;
+      }
+
+      .projetos-voltar-btn:hover {
+        color: #D6D6D6;
+        border: solid 1px #D6D6D6;
+        scale: 1;
+        transition: none;
+  }
+}

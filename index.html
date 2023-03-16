@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b69d422be5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Orbitron:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b69d422be5.js" crossorigin="anonymous"></script>
+
+    <title>Carlos Roberto Portfólio</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Carlos<span class="segundo-nome">Roberto</span></h1>
+
+
+        <nav class="nav-header">
+
+            <i id="open-btn" class="fa fa-bars fa 2x"></i>
+            <i id="close-btn" class="fa-regular fa-circle-xmark"></i>
+            <ul class="header-list">
+                <li><a href="#topo" onclick="clickMenu()">Início</a></li>
+                <li><a href="#sobre" onclick="clickMenu()">Sobre</a></li>
+                <li><a href="#projetos" onclick="clickMenu()">Projetos</a></li>
+                <li><a href="#contatos" onclick="clickMenu()">Contatos</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <section id="topo" class="content-inicio">
+        <div class="img-profile-container">
+            <img class="img-profile" src="profile.png" alt="image-profile">
+        </div>
+        <div class="texto-inicio">
+            <p>Olá, meu nome é<br><span class="inicio-nome">Carlos Roberto</span><br> e estou procurando minha primeira
+                experiência profissional como desenvolvedor FullStack...</p>
+            <p class="inicio-ferramentas">HTMl / CSS / Javascript</p>
+            <div class="inicio-button">
+                <button class="linkedin-btn"><a target="_blank"
+                        href="http://www.linkedin.com/in/carlos-roberto-santos-siqueira-filho"><i
+                            class="fa-brands fa-linkedin"></i> LinkedIn</a></button>
+                <button class="github-btn"><a target="_blank" href="https://github.com/CarlosBekinho"><i
+                            class="fa-brands fa-github"></i> GitHub</a></button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sobre" class="sobreMim-container">
+        <div class="sobreMim-content">
+            <h1>Sobre Mim:</h1><br>
+            <p>Olá!<br>Meu nome é Carlos Roberto e adoro a área da tecnologia. Estou cursando faculdade de Análise e
+                Desenvolvimento de Sistema pela UniCV e faço curso de FullStack developer pela HardBit. <br> Rápida
+                aprendizagem e fácil adaptação em situações do cotidiano de trabalho. <br>
+                Amante de uma boa música e tendente a prosperar o seu negócio.<br>
+                Com conhecimento em: JavaScript, Node.js, Algoritmo, C++, HTML, CSS, GitHub, Pacote Office, Redes, estou
+                em busca de emprego ou estágio com intuito de me consolidar na área e aprender coisas novas.<br>
+                Sou natural do Rio de Janeiro, Brasil.<br>
+                Estou aberto a oportunidades por toda a região.</p><br>
+            <h1 class="skills">Skills</h1><br>
+            <div class="skills-content">
+                <img class="htmlIcon" src="html5.png" alt="HTML5">
+                <img class="cssIcon" src="css3.png" alt="CSS3">
+                <img class="jsIcon" src="jslogo.png" alt="JavaScript">
+                <img class="nodeIcon" src="nodelogo.png" alt="NodeJs">
+                <img class="cIcon" src="clogo.png" alt="C++">
+            </div>
+
+        </div>
+
+
+        <div class="curriculum">
+            <button class="curriculum-button"><a target="_blank"
+                    href="Carlos Roberto Santos Siqueira Filho(Currículo 2023).pdf"
+                    download="Carlos Roberto Santos Siqueira Filho(Currículo 2023)"> Currículo Download</a></button>
+        </div>
+
+    </section>
+    <section id="projetos">
+        <h1>Projetos</h1>
+        <p>(feito com HTML5, CSS3 e JavaScript puro.) <br><br>Clique na figura para testar o projeto! </p>
+        <div class="projetos-content">
+
+            <ul id="ul-projetos">
+                <li><label><a href="https://calculadora-74be4.web.app/" target="_blank"
+                            rel="noopener noreferrer">Calculadora</label><img class="projeto-item" src="calculadora.PNG"
+                        alt="calculadora"></a>
+                </li>
+                <li><label><a href="https://jokenpo-7673a.web.app/" target="_blank"
+                            rel="noopener noreferrer">JOKENPÔ</label><img class="projeto-item" src="jokenpo.PNG"
+                        alt="JOKENPÔ"></a>
+                </li>
+                <li><label><a href="https://lista-de-tarefas-14981.web.app/" target="_blank"
+                            rel="noopener noreferrer">Lista de Tarefas</label><img class="projeto-item"
+                        src="lista-de-tarefas.PNG" alt="Lista de Tarefas"></a>
+                </li>
+                <li class="project-hidden-mobile"><label><a href="https://calculadora-de-porcentag-1128b.web.app"
+                            target="_blank" rel="noopener noreferrer">Calculadora de Porcentagem</label><img
+                        class="projeto-item" src="calculadoraPorcentagem.PNG" alt="Calculadora de Porcentagem"></a>
+                </li>
+                <li class="project-hidden-mobile"><label><a target="_blank" rel="noopener noreferrer"
+                            href="https://sorteador-de-numero-4618b.web.app/">Sorteador de Números</label><img
+                        class="projeto-item" src="sorteador.PNG" alt="sorteador de números"></a>
+                </li>
+                <li class="project-hidden-mobile"><label><a href="https://calculadora-de-imc-8eb77.web.app/"
+                            target="_blank" rel="noopener noreferrer">Calculadora de IMC</label><img
+                        class="projeto-item" src="calculadoraIMC.PNG" alt="calculadora IMC"></a>
+                </li>
+
+            </ul>
+
+            <ul id="ul-projetos-mobile">
+                <li><label><a href="https://calculadora-74be4.web.app/" target="_blank"
+                            rel="noopener noreferrer">Calculadora</label><img class="projeto-item" src="calculadora.PNG"
+                        alt="calculadora"></a>
+                </li>
+                <li><label><a href="https://jokenpo-7673a.web.app/" target="_blank"
+                            rel="noopener noreferrer">JOKENPÔ</label><img class="projeto-item" src="jokenpo.PNG"
+                        alt="JOKENPÔ"></a>
+                </li>
+                <li><label><a href="https://lista-de-tarefas-14981.web.app/" target="_blank"
+                            rel="noopener noreferrer">Lista de Tarefas</label><img class="projeto-item"
+                        src="lista-de-tarefas.PNG" alt="Lista de Tarefas"></a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="projetos.html"><button class="projetos-verTodos-btn"> Ver Todos</button></a>
+
+    </section>
+
+
+    <footer>
+        <div id="contatos" class="contato-container">
+            <h1>Contatos</h1>
+            <div class="contatos-content" ">
+                <ul class="contato-links">
+                    <li id="whatsapp"><a href="http://wa.me/21976178836" target="_blank"><img src="iconWhatsapp.png"
+                                alt="Whatsapp">(21)97617-8836</a>
+                    </li>
+                    <li id="telegram"><a href="https://t.me/Carlos_bekinho" target="_blank"><img src="iconTelegram.png" alt="Telegram">
+                            @carlos_bekinho</a>
+                    </li>
+                    <li id="github"><a href="https://github.com/CarlosBekinho" target="_blank"><img
+                                src="iconsGithub.png" alt="GitHub">
+                            GitHub.com/CarlosBekinho</a>
+                    </li>
+                    <li id="email"><a href="http://mailto.carlos.dev.job@gmail.com" target="_blank"><img
+                                src="iconsGmail.png" alt="Gmail"> carlos.dev.job@gmail.com</a>
+                    </li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/carlos-siqueira-filho/" target="_blank"><img
+                                src="iconLinkedin.png" alt="linkedin">
+                            linkedin.com/carlos-siqueira-filho</a>
+                    </li>
+
+                </ul>
+                <form class="form-contatos" action="https://formsubmit.co/carlos.dev.job@gmail.com" method="POST" >
+
+                    <label class="label-form-contatos">Nome:
+                        <input class="input-nome" type="text" name="name" placeholder="Insira seu nome..." required
+                            onchange="removeAttribute('id','error')" onblur="inputBlur()"></label>
+
+
+                    <label class="label-form-contatos">E-mail:
+                        <input class="input-email" type="email" name="email" placeholder="Insira seu e-mail..." required
+                            onchange="removeAttribute('id','error')" onblur="inputBlur()"></label>
+
+
+                    <label class="label-form-contatos" id="label-form-textArea">Mensagem:
+                        <textarea class="input-msg" type="text" name="textarea" placeholder="Insira sua mensagem..."
+                            required cols="26" rows="10" aria-required="true"
+                            onchange="removeAttribute('id','error')" onblur="inputBlur()"></textarea></label>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+
+                    <input id="enviar-btn" type="submit">
+
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
