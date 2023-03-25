@@ -62,11 +62,6 @@ a {
   transition: 0.5s;
 }
 
-
-
-
-
-
 .content-inicio {
   display: flex;
   width: 100%;
@@ -76,6 +71,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #252628;
+  
 
 }
 
