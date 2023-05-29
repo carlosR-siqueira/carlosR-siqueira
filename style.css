@@ -2,12 +2,13 @@
   font-family: 'Courier New', Courier, monospace;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+
 }
 
 body {
   margin: 0%;
   padding: 0%;
-
 
 }
 
@@ -24,6 +25,7 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 5px 5px 10px 5px #0000005e;
+  z-index: 1;
 }
 
 a {
@@ -340,30 +342,30 @@ a {
   transition: width 0.3s;
 }
 
-.contato-links #whatsapp:hover::after {
-  width: 37%;
+.contato-links li:hover::after {
+  width: 100%;
   transition: 0.5s;
 }
-
+/* 
 .contato-links #telegram:hover::after {
-  width: 40%;
+  width: 100%;
   transition: 0.5s;
 }
 
 .contato-links #github:hover::after {
-  width: 63%;
+  width: 100%;
   transition: 0.5s;
 }
 
 .contato-links #linkedin:hover::after {
-  width: 90%;
+  width: 100%;
   transition: 0.5s;
 }
 
 .contato-links #email:hover::after {
-  width: 64%;
+  width: 100%;
   transition: 0.5s;
-}
+} */
 
 
 .contato-links li a {
