@@ -60,3 +60,13 @@ function inputBlur() {
 
 
 }
+
+window.addEventListener('scroll', function() {
+    var voltarAoTopo = document.getElementById('voltar-ao-topo');
+    if (window.pageYOffset > 100) {
+      voltarAoTopo.style.display = 'block';
+    } else {
+      voltarAoTopo.style.display = 'none';
+    }
+  });
+  
