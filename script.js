@@ -58,7 +58,7 @@ function inputBlur() {
     formInputEmail.removeAttribute('id', 'error')
     formInputMsg.removeAttribute('id', 'error')
 
-
+ 
 }
 
 window.addEventListener('scroll', function() {
