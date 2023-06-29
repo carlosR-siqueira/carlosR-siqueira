@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 # 💫 About Me:
-⚡Full-Stack developer in Brasil.<br>🌱 I’m currently learning HTML5, CSS3, Javascript, Node.js, React.js.<br>🤝 I’m looking to my first opportunity as full-stack developer.<br>💬 Ask me about Javascript and web development.<br>:guitar: Fun fact: I'm a Guitar player ♫ <br> :link: portfolio: https://carlosbekinho.github.io/carlosbekinho/
+⚡ Front-end developer in Brasil.<br>🌱 I’m currently learning HTML5, CSS3, Javascript, Node.js, React.js.<br>🤝 I’m looking to my first opportunity as full-stack developer.<br>💬 Ask me about Javascript and web development.<br>:guitar: Fun fact: I'm a Guitar player ♫ <br> :link: portfolio: https://carlosbekinho.github.io/carlosbekinho/
 
 
 ## 🌐 Socials:
