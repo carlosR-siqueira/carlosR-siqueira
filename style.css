@@ -194,8 +194,11 @@ a {
 .cssIcon,
 .jsIcon,
 .nodeIcon,
-.cIcon {
+.cIcon,
+.awsIcon,
+.gitIcon {
   width: 60px;
+  margin: 0 7px;
 }
 
 .curriculum-button {
