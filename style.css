@@ -188,6 +188,7 @@ a {
 .skills-content {
   display: flex;
   justify-content: center;
+  gap: 15px;
 }
 
 .htmlIcon,
@@ -198,7 +199,7 @@ a {
 .awsIcon,
 .gitIcon {
   width: 60px;
-  margin: 0 7px;
+  
 }
 
 .curriculum-button {
@@ -230,7 +231,12 @@ a {
   height: 100%;
 }
 
-#projetos h1 {
+#projetos h1{
+  margin: 0 0 50px 0;
+}
+
+
+#projetos h1, #projetos h5 {
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -241,7 +247,7 @@ a {
   font-size: 0.8rem;
 }
 
-.projetos-content ul {
+.projetos-content ul, .trabalhos-profissionais-lista ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -252,19 +258,22 @@ a {
   font-size: 1rem;
 }
 
-.projetos-content ul li {
+.projetos-content ul li, .trabalhos-profissionais-lista ul li  {
   display: flex;
   flex-direction: column;
 }
 
-
+.trabalhos-profissionais-lista:hover :not(:hover):not(img):not(label):not(a):not(header) {
+  opacity: 0.4;
+  transition: all 500ms;
+}
 
 .projetos-content:hover :not(:hover):not(img):not(label):not(a):not(header) {
   opacity: 0.4;
   transition: all 500ms;
 }
 
-.projetos-content ul li:hover {
+.projetos-content ul li:hover, .trabalhos-profissionais-lista ul li:hover  {
   scale: 1.1;
   color: #f5f5f5e5;
   cursor: pointer;
@@ -282,6 +291,17 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+}
+
+.hidden{
+  display: none;
+  
+}
+
+.editais{
+  width: 350px;
+  height: 180px;
+  
 }
 
 
@@ -594,6 +614,8 @@ a {
 
   }
 
+
+
   #ul-projetos {
     display: none;
   }
@@ -808,12 +830,20 @@ a {
     font-size: 0.7rem;
   }
 
+  .skills-content{
+    gap: 10px;
+  }
+
   .htmlIcon,
   .cssIcon,
   .jsIcon,
   .nodeIcon,
-  .cIcon {
-    width: 40px;
+  .awsIcon,
+  .gitIcon {
+    height: max-content;
+    width: 38px;
+    
+    
   }
 
   .curriculum-button:hover {
@@ -830,6 +860,20 @@ a {
     padding: 20px;
     padding-top: 70px;
     height: 100%;
+  }
+
+  .editais{
+    width: 250px;
+    height: 150px;
+    
+  }
+
+  #projetos h5{
+    margin: 20px 0 0 0;
+  }
+
+  #projetos p{
+    margin: 20px 0 40px 0;
   }
 
   .project-hidden-mobile {

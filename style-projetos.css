@@ -28,6 +28,18 @@ a {
   font-size: 1.5rem;
   height: 150vh;
 }
+.hr {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+hr {
+  margin: 0%;
+  border: 0;
+  width: 75%;
+  border-top: 1px solid #f1f2f277;
+}
 
 
 #projetos p {
