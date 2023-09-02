@@ -9,19 +9,19 @@ closeBtn.addEventListener("click", closeMenu)
 
 
 function openMenu() {
-    headerList.style.top = "-4.3%"
+    headerList.style.left = "-3%"
     openBtn.style.display = 'none'
     closeBtn.style.display = "block"
 }
 
 function closeMenu() {
-    headerList.style.top = '-200%'
+    headerList.style.left = '-200%'
     closeBtn.style.display = "none"
     openBtn.style.display = 'block'
 }
 
 function clickMenu() {
-    headerList.style.top = '-200%'
+    headerList.style.left = '-200%'
     closeBtn.style.display = "none"
     openBtn.style.display = 'block'
 }
