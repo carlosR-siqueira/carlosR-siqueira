@@ -309,12 +309,7 @@ a {
   
 }
 
-.card- {
-  width: 300px; /* Largura do card */
-  height: 200px; /* Altura do card */
-  overflow: hidden; /* Para esconder partes das imagens que ultrapassem as dimensões do card */
-  position: relative;
-}
+
 
 .mySlides {
   display: none;
@@ -637,6 +632,10 @@ a {
     height: 100%;
     padding-top: 80px;
 
+  }
+
+  .trabalhos-profissionais-lista ul{
+    flex-direction: column;
   }
 
 
