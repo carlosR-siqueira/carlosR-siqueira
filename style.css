@@ -226,7 +226,7 @@ a {
   text-align: center;
   color: #42C920;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 60px 0 0 0;
   height: 100%;
 }
@@ -242,9 +242,9 @@ a {
 
 #projetos p {
   font-weight: normal;
-  color: #d6d6d663;
+  color: #d6d6d6d3;
   margin-top: 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .projetos-content ul, .trabalhos-profissionais-lista ul {
@@ -256,6 +256,11 @@ a {
   margin: 50px 0 100px 0;
   color: #d6d6d663;
   font-size: 1rem;
+  
+}
+
+.trabalhos-profissionais-lista ul{
+  justify-content: space-evenly;
 }
 
 .projetos-content ul li, .trabalhos-profissionais-lista ul li  {
@@ -298,11 +303,32 @@ a {
   
 }
 
-.editais{
+.editais, .criativa{
   width: 350px;
   height: 180px;
   
 }
+
+.card- {
+  width: 300px; /* Largura do card */
+  height: 200px; /* Altura do card */
+  overflow: hidden; /* Para esconder partes das imagens que ultrapassem as dimensões do card */
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.slideshow-container img {
+  vertical-align: middle;
+}
+
 
 
 #ul-projetos-mobile,
