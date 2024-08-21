@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b69d422be5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
 
     <title>Carlos Roberto Portfólio</title>
 
@@ -31,9 +33,7 @@
     <header>
         <h1 class="nome-titulo">Carlos<span class="segundo-nome">Siqueira</span></h1>
 
-
         <nav class="nav-header">
-
             <i id="open-btn" class="fa fa-bars fa 2x"></i>
             <i id="close-btn" class="fa-regular fa-circle-xmark"></i>
             <ul class="header-list">
@@ -41,14 +41,13 @@
                 <li><a href="#sobre" onclick="clickMenu()">Sobre</a></li>
                 <li><a href="#projetos" onclick="clickMenu()">Projetos</a></li>
                 <li><a href="#contatos" onclick="clickMenu()">Contatos</a></li>
-
             </ul>
         </nav>
-
     </header>
+
     <section id="topo" class="content-inicio">
         <div class="img-profile-container">
-            <img class="img-profile" src="profile.png" alt="image-profile">
+            <img class="img-profile" src="img/profile.png" alt="image-profile">
         </div>
         <div class="texto-inicio">
             <p>Olá, meu nome é<br><span class="inicio-nome">Carlos Siqueira</span><br> Sou desenvolvedor Front-End...
@@ -56,209 +55,220 @@
             <p class="inicio-ferramentas">HTMl / CSS / Javascript</p>
             <div class="inicio-button">
                 <button class="linkedin-btn"><a target="_blank"
-                        href="https://www.linkedin.com/in/carlos-siqueira-filho/"><i
-                            class="fa-brands fa-linkedin"></i> LinkedIn</a></button>
+                        href="https://www.linkedin.com/in/carlos-siqueira-filho/"><i class="fa-brands fa-linkedin"></i>
+                        LinkedIn</a></button>
                 <button class="github-btn"><a target="_blank" href="https://github.com/carlosR-siqueira"><i
                             class="fa-brands fa-github"></i> GitHub</a></button>
             </div>
         </div>
-
     </section>
 
     <section id="sobre" class="sobreMim-container">
         <div class="sobreMim-content">
             <h1>Sobre Mim:</h1><br>
-            <p>Olá!<br>Meu nome é Carlos Siqueira e adoro a área da tecnologia. Estou cursando faculdade de Análise e
-                Desenvolvimento de Sistema pela UniCV e faço curso de Front-End developer pela HardBit. <br> Rápida
-                aprendizagem e fácil adaptação em situações do cotidiano de trabalho. <br>
-                Amante de uma boa música e tendente a prosperar o seu negócio.<br>
-                Com conhecimento em: HTML, CSS, JavaScript, Node.js, Amazon Web Services(AWS), Algoritmo, C++, GitHub,
-                Pacote Office, Redes, com intuito de me consolidar na área e aprender coisas novas.<br>
-                Sou natural do Rio de Janeiro, Brasil.<br>
-                Estou aberto a oportunidades por toda a região.</p><br>
+            <p>Olá!<br>Meu nome é Carlos Siqueira e sou apaixonado por tecnologia. Sou formado em Análise e
+                Desenvolvimento de Sistemas pela UniCV e concluí um curso de Full-Stack Development pela HardBit. Tenho
+                facilidade em aprender rapidamente e me adaptar a diferentes situações no ambiente de trabalho. Sou um
+                entusiasta da música e comprometido em contribuir para o sucesso do seu negócio. Possuo conhecimentos em
+                HTML, CSS, JavaScript, Node.js, React.js, Next.js, Amazon Web Services (AWS), WordPress, E-Commerce,
+                Banco de Dados, SQL, C++, GitHub, Redes, Etc, sempre buscando me consolidar na área e aprender coisas
+                novas. Sou natural do Rio de Janeiro, Brasil, e estou aberto a oportunidades em toda a região.</p><br>
             <h1 class="skills">Skills</h1><br>
-            <div class="skills-content">
-                <img class="htmlIcon" src="html5.png" alt="HTML5">
-                <img class="cssIcon" src="css3.png" alt="CSS3">
-                <img class="jsIcon" src="jslogo.png" alt="JavaScript">
-                <img class="nodeIcon" src="nodelogo.png" alt="NodeJs">
-                <img class="awsIcon" src="awsIcon.png" alt="AWS">
-                <img class="gitIcon" src="gitIcon.png" alt="GitHub">
-            </div>
+            <ul class="skills-content">
+                <li><img class="skillIcon" src="img/html5.png" alt="HTML5"></li>
+                <li><img class="skillIcon" src="img/css3.png" alt="CSS3"></li>
+                <li><img class="skillIcon" src="img/jslogo.png" alt="JavaScript"></li>
+                <li><img class="skillIcon" src="img/nodelogo.png" alt="NodeJs"></li>
+                <li><img class="skillIcon" src="img/nextjs.png" alt="NextJs"></li>
+                <li><img class="skillIcon" src="img/reactjs.png" alt="ReactJs"></li>
+                <li><img class="skillIcon" src="img/typescript.png" alt="TypeScript"></li>
+                <li><img class="skillIcon" src="img/mysql.png" alt="MySQL"></li>
+                <li><img class="skillIcon" src="img/awsIcon.png" alt="AWS"></li>
+                <li><img class="skillIcon" src="img/firebase.png" alt="firebase"></li>
+                <li><img class="skillIcon" src="img/wordpress.png" alt="WordPress"></li>
+                <li><img class="skillIcon" src="img/gitIcon.png" alt="GitHub"></li>
+            </ul>
 
         </div>
-
 
         <div class="curriculum">
             <button class="curriculum-button"><a target="_blank"
-                    href="Carlos Roberto Santos Siqueira Filho(Currículo 2023).pdf"
-                    download="Carlos Roberto Santos Siqueira Filho(Currículo 2023)"> Currículo Download</a></button>
+                    href="/CV/Carlos Roberto Santos Siqueira Filho(Currículo 2024).pdf">Currículo Download</a></button>
+
         </div>
 
     </section>
+
     <section id="projetos">
         <h1>Projetos</h1>
-
 
         <h5 class="projetos-subTitle-1">Trabalhos Profissionais</h5>
         <p>(trabalhos feitos profissionalmente como desenvolvedor) <br><br>Clique na figura para acessar o site!</p>
 
         <div class="trabalhos-profissionais-lista">
-
             <ul>
-                <li><label><a href="https://github.com/carlosR-siqueira/criativaDesign-orcamento-pdf" target="_blank" rel="noopener noreferrer">Gerador de orçamento em PDF.<br>Projeto
-                            feito para Criativa Design Gráfico.</label>
+                <li><label><a href="https://github.com/carlosR-siqueira/criativaDesign-orcamento-pdf" target="_blank"
+                            rel="noopener noreferrer">Gerador de orçamento em PDF.<br>Projeto feito para Criativa Design
+                            Gráfico.</label>
                     <div class="slideshow-container">
-
                         <div class="mySlides fade">
-                            <img src="criativa.jpg" class="projeto-item criativa" alt="criativa-orçamento">
+                            <img src="img/criativa.jpg" class="projeto-item criativa" alt="criativa-orçamento">
                         </div>
 
                         <div class="mySlides fade">
-                            <img src="criativa1.jpg" class="projeto-item criativa" alt="criativa-orçamento">
+                            <img src="img/criativa1.jpg" class="projeto-item criativa" alt="criativa-orçamento">
                         </div>
 
                         <div class="mySlides fade">
-                            <img src="criativa2.jpg" class="projeto-item criativa" alt="criativa-orçamento">
+                            <img src="img/criativa2.jpg" class="projeto-item criativa" alt="criativa-orçamento">
+                        </div>
+                    </div></a>
+                </li>
+                <li><label><a href="https://main--cardapion.netlify.app/" target="_blank"
+                            rel="noopener noreferrer">Cardápio Online.<br>Projeto feito em Next.js.</label>
+                    <div class="slideshow-container2">
+                        <div class="mySlides2 fade">
+                            <img src="img/cardapio.PNG" class="projeto-item cardapio" alt="cardapio">
                         </div>
 
+                        <div class="mySlides2 fade">
+                            <img src="img/cardapio2.PNG" class="projeto-item cardapio2" alt="cardapio">
+                        </div>
 
                     </div></a>
-
                 </li>
                 <li><label><a href="https://editaisbrasil.net.br/" target="_blank" rel="noopener noreferrer">Editais
                             Brasil.<br>Projeto de caráter institucional da UERJ.</label><img
-                        class="projeto-item editais" src="editais-brasil.jpg" alt="Editais Brasil"></a>
+                        class="projeto-item editais" src="img/editais-brasil.jpg" alt="Editais Brasil"></a>
                 </li>
-                <!-- <li><label><a href="" target="_blank" rel="noopener noreferrer"></label><img class="projeto-item hidden"
-                        src="" alt=""></a>
-                </li> -->
             </ul>
-
         </div>
-
 
         <h5>Prática e Estudos</h5>
         <p>(Projetos feitos com HTML5, CSS3 e JavaScript, NodeJs, entre outras tecnologias...) <br><br>Clique na figura
             para testar o projeto! </p>
         <div class="projetos-content">
-
             <ul id="ul-projetos">
                 <li><label><a href="https://carlosbekinhochat.onrender.com/" target="_blank"
-                            rel="noopener noreferrer">Chat-Online</label><img class="projeto-item" src="chatNode.PNG"
-                        alt="Chat-Online"></a>
+                            rel="noopener noreferrer">Chat-Online</label><img class="projeto-item"
+                        src="img/chatNode.PNG" alt="Chat-Online"></a>
                 </li>
                 <li><label><a href="https://calculadora-74be4.web.app/" target="_blank"
-                            rel="noopener noreferrer">Calculadora</label><img class="projeto-item" src="calculadora.PNG"
-                        alt="calculadora"></a>
+                            rel="noopener noreferrer">Calculadora</label><img class="projeto-item"
+                        src="img/calculadora.PNG" alt="calculadora"></a>
                 </li>
                 <li><label><a href="https://jokenpo-7673a.web.app/" target="_blank"
-                            rel="noopener noreferrer">JOKENPÔ</label><img class="projeto-item" src="jokenpo.PNG"
+                            rel="noopener noreferrer">JOKENPÔ</label><img class="projeto-item" src="img/jokenpo.PNG"
                         alt="JOKENPÔ"></a>
                 </li>
                 <li><label><a href="https://lista-de-tarefas-14981.web.app/" target="_blank"
                             rel="noopener noreferrer">Lista de Tarefas</label><img class="projeto-item"
-                        src="lista-de-tarefas.PNG" alt="Lista de Tarefas"></a>
+                        src="img/lista-de-tarefas.PNG" alt="Lista de Tarefas"></a>
                 </li>
                 <li class="project-hidden-mobile"><label><a href="https://calculadora-de-porcentag-1128b.web.app"
                             target="_blank" rel="noopener noreferrer">Calculadora de Porcentagem</label><img
-                        class="projeto-item" src="calculadoraPorcentagem.PNG" alt="Calculadora de Porcentagem"></a>
+                        class="projeto-item" src="img/calculadoraPorcentagem.PNG" alt="Calculadora de Porcentagem"></a>
                 </li>
                 <li class="project-hidden-mobile"><label><a target="_blank" rel="noopener noreferrer"
                             href="https://sorteador-de-numero-4618b.web.app/">Sorteador de Números</label><img
-                        class="projeto-item" src="sorteador.PNG" alt="sorteador de números"></a>
+                        class="projeto-item" src="img/sorteador.PNG" alt="sorteador de números"></a>
                 </li>
                 <li class="project-hidden-mobile"><label><a href="https://calculadora-de-imc-8eb77.web.app/"
                             target="_blank" rel="noopener noreferrer">Calculadora de IMC</label><img
-                        class="projeto-item" src="calculadoraIMC.PNG" alt="calculadora IMC"></a>
+                        class="projeto-item" src="img/calculadoraIMC.PNG" alt="calculadora IMC"></a>
                 </li>
-
             </ul>
 
             <ul id="ul-projetos-mobile">
                 <li><label><a href="https://carlosbekinhochat.onrender.com/" target="_blank"
-                            rel="noopener noreferrer">Chat-Online</label><img class="projeto-item" src="chatNode.PNG"
-                        alt="Chat-Online"></a>
+                            rel="noopener noreferrer">Chat-Online</label><img class="projeto-item"
+                        src="img/chatNode.PNG" alt="Chat-Online"></a>
                 </li>
                 <li><label><a href="https://calculadora-74be4.web.app/" target="_blank"
-                            rel="noopener noreferrer">Calculadora</label><img class="projeto-item" src="calculadora.PNG"
-                        alt="calculadora"></a>
+                            rel="noopener noreferrer">Calculadora</label><img class="projeto-item"
+                        src="img/calculadora.PNG" alt="calculadora"></a>
                 </li>
                 <li><label><a href="https://jokenpo-7673a.web.app/" target="_blank"
-                            rel="noopener noreferrer">JOKENPÔ</label><img class="projeto-item" src="jokenpo.PNG"
+                            rel="noopener noreferrer">JOKENPÔ</label><img class="projeto-item" src="img/jokenpo.PNG"
                         alt="JOKENPÔ"></a>
                 </li>
                 <li><label><a href="https://lista-de-tarefas-14981.web.app/" target="_blank"
                             rel="noopener noreferrer">Lista de Tarefas</label><img class="projeto-item"
-                        src="lista-de-tarefas.PNG" alt="Lista de Tarefas"></a>
+                        src="img/lista-de-tarefas.PNG" alt="Lista de Tarefas"></a>
                 </li>
+                <!-- <li class="project-hidden-mobile"><label><a href="https://calculadora-de-porcentag-1128b.web.app"
+                            target="_blank" rel="noopener noreferrer">Calculadora de Porcentagem</label><img
+                        class="projeto-item" src="img/calculadoraPorcentagem.PNG" alt="Calculadora de Porcentagem"></a>
+                </li>
+                <li class="project-hidden-mobile"><label><a target="_blank" rel="noopener noreferrer"
+                            href="https://sorteador-de-numero-4618b.web.app/">Sorteador de Números</label><img
+                        class="projeto-item" src="img/sorteador.PNG" alt="sorteador de números"></a>
+                </li>
+                <li class="project-hidden-mobile"><label><a href="https://calculadora-de-imc-8eb77.web.app/"
+                            target="_blank" rel="noopener noreferrer">Calculadora de IMC</label><img
+                        class="projeto-item" src="img/calculadoraIMC.PNG" alt="calculadora IMC"></a>
+                </li> -->
             </ul>
         </div>
 
         <a href="projetos.html"><button class="projetos-verTodos-btn"> Ver Todos</button></a>
-
     </section>
+
+
 
 
     <footer>
         <div id="contatos" class="contato-container">
             <h1>Contatos</h1>
-            <div class="contatos-content" ">
-                <ul class=" contato-links">
-                <li id="whatsapp"><a href="http://wa.me/21976178836" target="_blank"><img src="iconWhatsapp.png"
-                            alt="Whatsapp">(21)97617-8836</a>
-                </li>
-                <li id="telegram"><a href="https://t.me/Carlos_bekinho" target="_blank"><img src="iconTelegram.png"
-                            alt="Telegram">
-                        @carlos_bekinho</a>
-                </li>
-                <li id="github"><a href="https://github.com/CarlosBekinho" target="_blank"><img src="iconsGithub.png"
-                            alt="GitHub">
-                        GitHub.com/CarlosBekinho</a>
-                </li>
-                <li id="email"><a href="http://mailto.carlos.dev.job@gmail.com" target="_blank"><img
-                            src="iconsGmail.png" alt="Gmail"> carlos.dev.job@gmail.com</a>
-                </li>
-                <li id="linkedin"><a href="https://www.linkedin.com/in/carlos-siqueira-filho/" target="_blank"><img
-                            src="iconLinkedin.png" alt="linkedin">
-                        linkedin.com/carlos-siqueira-filho</a>
-                </li>
-
+            <div class="contatos-content">
+                <ul class="contato-links">
+                    <li id="whatsapp"><a href="http://wa.me/21976178836" target="_blank"><img src="img/iconWhatsapp.png"
+                                alt="Whatsapp">(21)97617-8836</a></li>
+                    <li id="telegram"><a href="https://t.me/Carlos_bekinho" target="_blank"><img
+                                src="img/iconTelegram.png" alt="Telegram">@carlos_bekinho</a></li>
+                    <li id="github"><a href="https://github.com/carlosR-siqueira" target="_blank"><img
+                                src="img/iconsGithub.png" alt="GitHub">github.com/carlosR-siqueira</a></li>
+                    <li id="email"><a href="mailto:carlos.dev.job@gmail.com" target="_blank"><img
+                                src="img/iconsGmail.png" alt="Gmail"> carlos.dev.job@gmail.com</a></li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/carlos-siqueira-filho/" target="_blank"><img
+                                src="img/iconLinkedin.png" alt="LinkedIn">linkedin.com/carlos-siqueira-filho</a></li>
                 </ul>
-                <form class="form-contatos" action="https://formsubmit.co/carlos.dev.job@gmail.com" method="POST">
+                <div class="form-container">
 
-                    <label class="label-form-contatos">Nome:
+                    <form class="form-contatos" action="https://formsubmit.co/carlos.dev.job@gmail.com" method="POST">
+                        <label class="label-form-contatos">Nome:
                         <input class="input-nome" type="text" name="name" placeholder="Insira seu nome..." required
-                            onchange="removeAttribute('id','error')" onblur="inputBlur()"></label>
-
-
+                        onchange="removeAttribute('id','error')" onblur="inputBlur()">
+                    </label>
+                    
                     <label class="label-form-contatos">E-mail:
                         <input class="input-email" type="email" name="email" placeholder="Insira seu e-mail..." required
-                            onchange="removeAttribute('id','error')" onblur="inputBlur()"></label>
-
-
+                        onchange="removeAttribute('id','error')" onblur="inputBlur()">
+                    </label>
+                    
                     <label class="label-form-contatos" id="label-form-textArea">Mensagem:
                         <textarea class="input-msg" type="text" name="textarea" placeholder="Insira sua mensagem..."
-                            required cols="26" rows="10" aria-required="true" onchange="removeAttribute('id','error')"
-                            onblur="inputBlur()"></textarea></label>
+                        required cols="26" rows="10" aria-required="true" onchange="removeAttribute('id','error')"
+                        onblur="inputBlur()"></textarea>
+                    </label>
 
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://github.com/carlosR-siqueira">
-
+                    
                     <input id="enviar-btn" type="submit">
-
                 </form>
+            </div>
             </div>
         </div>
         <div class="final-footer">
             <p>Direitos Reservados © 2023. Desenvolvido por: Carlos Siqueira.</p>
-
         </div>
     </footer>
 
+
     <a href="#" id="voltar-ao-topo"><i class="fa-solid fa-up-long"></i></a>
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

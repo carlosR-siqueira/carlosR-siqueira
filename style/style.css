@@ -12,8 +12,9 @@ body {
 
 }
 
-
-
+li {
+  list-style: none;
+}
 
 header {
   position: fixed;
@@ -32,6 +33,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
 
 .nome-titulo {
   font-family: 'Orbitron', sans-serif;
@@ -154,13 +157,13 @@ a {
 }
 
 .sobreMim-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000000;
   text-align: center;
+  width: 100%;
 }
 
 .sobreMim-content {
@@ -179,6 +182,7 @@ a {
   font-family: 'Orbitron', sans-serif;
   font-size: 2rem;
   color: #42C920;
+  margin: 20px 0 20px 0;
 }
 
 .sobreMim-content p {
@@ -188,18 +192,20 @@ a {
 .skills-content {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.htmlIcon,
-.cssIcon,
-.jsIcon,
-.nodeIcon,
-.cIcon,
-.awsIcon,
-.gitIcon {
-  width: 60px;
-  
+.skills-content li {
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.skillIcon {
+  width: 100px;
+  margin: 5px;
+
 }
 
 .curriculum-button {
@@ -228,15 +234,19 @@ a {
   font-weight: 600;
   font-size: 2rem;
   padding: 60px 0 0 0;
-  height: 100%;
+
 }
 
-#projetos h1{
+
+
+
+#projetos h1 {
   margin: 0 0 50px 0;
 }
 
 
-#projetos h1, #projetos h5 {
+#projetos h1,
+#projetos h5 {
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -247,7 +257,8 @@ a {
   font-size: 1rem;
 }
 
-.projetos-content ul, .trabalhos-profissionais-lista ul {
+.projetos-content ul,
+.trabalhos-profissionais-lista ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -256,14 +267,15 @@ a {
   margin: 50px 0 100px 0;
   color: #d6d6d663;
   font-size: 1rem;
-  
+
 }
 
-.trabalhos-profissionais-lista ul{
+.trabalhos-profissionais-lista ul {
   justify-content: space-evenly;
 }
 
-.projetos-content ul li, .trabalhos-profissionais-lista ul li  {
+.projetos-content ul li,
+.trabalhos-profissionais-lista ul li {
   display: flex;
   flex-direction: column;
 }
@@ -278,7 +290,8 @@ a {
   transition: all 500ms;
 }
 
-.projetos-content ul li:hover, .trabalhos-profissionais-lista ul li:hover  {
+.projetos-content ul li:hover,
+.trabalhos-profissionais-lista ul li:hover {
   scale: 1.1;
   color: #f5f5f5e5;
   cursor: pointer;
@@ -298,26 +311,35 @@ a {
   border-radius: 10px;
 }
 
-.hidden{
+.hidden {
   display: none;
-  
+
 }
 
-.editais, .criativa{
+.editais,
+.criativa,
+.cardapio,
+.cardapio2 {
   width: 350px;
   height: 180px;
-  
+
+}
+
+.cardapio2 {
+  object-fit: contain;
+}
+
+.slideshow-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 
-
-.mySlides {
+.mySlides,
+.mySlides2 {
   display: none;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
 }
 
 .slideshow-container img {
@@ -398,6 +420,11 @@ a {
 .contato-links li:hover::after {
   width: 100%;
   transition: 0.5s;
+}
+
+.form-container{
+  display: flex;
+  width: min-content;
 }
 
 
@@ -533,6 +560,7 @@ a {
   margin: 1px 0 0 0;
   text-align: center;
   /* font-size: 1rem; */
+  width: 100%;
 }
 
 .final-footer p {
@@ -634,7 +662,7 @@ a {
 
   }
 
-  .trabalhos-profissionais-lista ul{
+  .trabalhos-profissionais-lista ul {
     flex-direction: column;
   }
 
@@ -683,7 +711,7 @@ a {
     gap: 70px;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
-    padding: 60px 30px 0px 30px;
+    /* padding: 60px 30px 0px 30px; */
 
   }
 
@@ -699,6 +727,7 @@ a {
     gap: 30px;
     font-size: 1rem;
     justify-content: center;
+
 
   }
 
@@ -751,7 +780,8 @@ a {
 
   header {
     display: flex;
-    
+    width: 100%;
+
 
   }
 
@@ -759,12 +789,12 @@ a {
     position: fixed;
     display: flex;
     flex-direction: column;
-    
+
     left: -200%;
     background: #1f1e1e;
     box-shadow: 10px 10px 10px #00000075;
     border-radius: 7px;
-    width: 75% ;
+    width: 75%;
     height: 100%;
 
     text-align: left;
@@ -792,6 +822,8 @@ a {
 
   .content-inicio {
     height: 100%;
+    width: 100%;
+
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0px;
@@ -821,14 +853,16 @@ a {
   }
 
   .sobreMim-container {
-    /* width: 100%; */
-    /* display: flex; */
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #000000;
     text-align: center;
     height: 100%;
+    width: 100% !important;
+
   }
 
   .sobreMim-content {
@@ -855,7 +889,7 @@ a {
     font-size: 0.7rem;
   }
 
-  .skills-content{
+  .skills-content {
     gap: 10px;
   }
 
@@ -867,8 +901,8 @@ a {
   .gitIcon {
     height: max-content;
     width: 38px;
-    
-    
+
+
   }
 
   .curriculum-button:hover {
@@ -877,27 +911,28 @@ a {
 
   #projetos {
     display: flex;
-    width: auto;
+    width: 100% !important;
     flex-direction: column;
     color: #42C920;
     font-weight: 600;
     font-size: 1rem;
-    padding: 20px;
-    padding-top: 70px;
-    height: 100%;
+    /* padding: 20px;
+    padding-top: 70px; */
+
   }
 
-  .editais, .criativa{
+  .editais,
+  .criativa {
     width: 250px;
     height: 150px;
-    
+
   }
 
-  #projetos h5{
+  #projetos h5 {
     margin: 20px 0 0 0;
   }
 
-  #projetos p{
+  #projetos p {
     margin: 20px 0 40px 0;
   }
 
@@ -929,7 +964,7 @@ a {
   }
 
   .contato-container {
-    width: auto;
+    /* width: 100%; */
     background-color: #1f1e1ed0;
     text-align: center;
     color: #D6D6D6;
@@ -947,6 +982,7 @@ a {
 
   .contatos-content {
     flex-wrap: wrap-reverse;
+    padding: 60px 0 0 0;
 
 
   }
@@ -955,7 +991,7 @@ a {
 
   .contato-links {
     flex-direction: row !important;
-    /* flex-wrap: wrap; */
+    align-self: center;
   }
 
   #enviar-btn {
@@ -995,5 +1031,9 @@ a {
     display: none !important;
 
 
+  }
+
+  .final-footer {
+    width: 100% !important;
   }
 }

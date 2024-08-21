@@ -73,6 +73,7 @@ window.addEventListener('scroll', function() {
 //   img slide projetos
 
 let slideIndex = 0;
+let slideIndex2 = 0;
 
 // Função para mostrar os slides automaticamente
 function showSlides() {
@@ -86,11 +87,28 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000); // Altere 2000 para o intervalo desejado em milissegundos (2 segundos neste exemplo)
+  setTimeout(showSlides, 3000); // Altere 1000 para o intervalo desejado em milissegundos (1 segundo neste exemplo)
 }
 
-// Inicie o slideshow quando a página for carregada
+// Função para mostrar os slides automaticamente (para o segundo slideshow)
+function showSlides2() {
+  let i;
+  const slides2 = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {
+    slideIndex2 = 1;
+  }
+  slides2[slideIndex2 - 1].style.display = "block";
+  setTimeout(showSlides2, 3000); // Altere 1000 para o intervalo desejado em milissegundos (1 segundo neste exemplo)
+}
+
+// Inicie os slideshows quando a página for carregada
 window.onload = function () {
   showSlides();
+  showSlides2();
 };
+
 
