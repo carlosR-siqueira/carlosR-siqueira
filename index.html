@@ -50,7 +50,7 @@
             <img class="img-profile" src="img/profile.png" alt="image-profile">
         </div>
         <div class="texto-inicio">
-            <p>Olá, meu nome é<br><span class="inicio-nome">Carlos Siqueira</span><br> Sou desenvolvedor Front-End...
+            <p>Olá, meu nome é<br><span class="inicio-nome">Carlos Siqueira</span><br> Sou desenvolvedor Full-Stack...
             </p>
             <p class="inicio-ferramentas">HTMl / CSS / Javascript</p>
             <div class="inicio-button">
@@ -106,41 +106,20 @@
         <p>(trabalhos feitos profissionalmente como desenvolvedor) <br><br>Clique na figura para acessar o site!</p>
 
         <div class="trabalhos-profissionais-lista">
-            <ul>
-                <li><label><a href="https://github.com/carlosR-siqueira/criativaDesign-orcamento-pdf" target="_blank"
-                            rel="noopener noreferrer">Gerador de orçamento em PDF.<br>Projeto feito para Criativa Design
-                            Gráfico.</label>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="img/criativa.jpg" class="projeto-item criativa" alt="criativa-orçamento">
-                        </div>
-
-                        <div class="mySlides fade">
-                            <img src="img/criativa1.jpg" class="projeto-item criativa" alt="criativa-orçamento">
-                        </div>
-
-                        <div class="mySlides fade">
-                            <img src="img/criativa2.jpg" class="projeto-item criativa" alt="criativa-orçamento">
-                        </div>
-                    </div></a>
-                </li>
+            <ul class="ul-projetos">
                 <li><label><a href="https://main--cardapion.netlify.app/" target="_blank"
-                            rel="noopener noreferrer">Cardápio Online.<br>Projeto feito em Next.js.</label>
-                    <div class="slideshow-container2">
-                        <div class="mySlides2 fade">
-                            <img src="img/cardapio.PNG" class="projeto-item cardapio" alt="cardapio">
-                        </div>
-
-                        <div class="mySlides2 fade">
-                            <img src="img/cardapio2.PNG" class="projeto-item cardapio2" alt="cardapio">
-                        </div>
-
-                    </div></a>
+                            rel="noopener noreferrer">Cardápio Online. <br> Projeto feito em Next.js.</label><img class="projeto-item" src="img/cardapio.PNG" alt="Cardápio Online"></a>
                 </li>
-                <li><label><a href="https://editaisbrasil.net.br/" target="_blank" rel="noopener noreferrer">Editais
-                            Brasil.<br>Projeto de caráter institucional da UERJ.</label><img
-                        class="projeto-item editais" src="img/editais-brasil.jpg" alt="Editais Brasil"></a>
+                <li><label><a href="https://github.com/carlosR-siqueira/criativaDesign-orcamento-pdf" target="_blank"
+                            rel="noopener noreferrer">Gerador de orçamento em PDF. <br> Projeto feito para Criativa
+                            Design Gráfico.</label><img class="projeto-item" src="img/criativa.jpg"
+                        alt="Gerador de orçamentos"></a>
                 </li>
+                <li><label><a href="https://editaisbrasil.net.br/" target="_blank"
+                            rel="noopener noreferrer">Editais Brasil. <br> Projeto de caráter institucional da
+                            UERJ.</label><img class="projeto-item" src="img/editais-brasil.jpg" alt="Editais Brasil"></a>
+                </li>
+
             </ul>
         </div>
 
@@ -237,27 +216,27 @@
 
                     <form class="form-contatos" action="https://formsubmit.co/carlos.dev.job@gmail.com" method="POST">
                         <label class="label-form-contatos">Nome:
-                        <input class="input-nome" type="text" name="name" placeholder="Insira seu nome..." required
-                        onchange="removeAttribute('id','error')" onblur="inputBlur()">
-                    </label>
-                    
-                    <label class="label-form-contatos">E-mail:
-                        <input class="input-email" type="email" name="email" placeholder="Insira seu e-mail..." required
-                        onchange="removeAttribute('id','error')" onblur="inputBlur()">
-                    </label>
-                    
-                    <label class="label-form-contatos" id="label-form-textArea">Mensagem:
-                        <textarea class="input-msg" type="text" name="textarea" placeholder="Insira sua mensagem..."
-                        required cols="26" rows="10" aria-required="true" onchange="removeAttribute('id','error')"
-                        onblur="inputBlur()"></textarea>
-                    </label>
+                            <input class="input-nome" type="text" name="name" placeholder="Insira seu nome..." required
+                                onchange="removeAttribute('id','error')" onblur="inputBlur()">
+                        </label>
 
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://github.com/carlosR-siqueira">
-                    
-                    <input id="enviar-btn" type="submit">
-                </form>
-            </div>
+                        <label class="label-form-contatos">E-mail:
+                            <input class="input-email" type="email" name="email" placeholder="Insira seu e-mail..."
+                                required onchange="removeAttribute('id','error')" onblur="inputBlur()">
+                        </label>
+
+                        <label class="label-form-contatos" id="label-form-textArea">Mensagem:
+                            <textarea class="input-msg" type="text" name="textarea" placeholder="Insira sua mensagem..."
+                                required cols="26" rows="10" aria-required="true"
+                                onchange="removeAttribute('id','error')" onblur="inputBlur()"></textarea>
+                        </label>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://github.com/carlosR-siqueira">
+
+                        <input id="enviar-btn" type="submit">
+                    </form>
+                </div>
             </div>
         </div>
         <div class="final-footer">
