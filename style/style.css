@@ -676,10 +676,9 @@ a {
     text-align: center;
     color: #42C920;
     font-weight: 600;
-    
-    padding: 0px;
     height: 100%;
-    /* padding-top: 80px; */
+   
+
 
   }
 
@@ -701,7 +700,7 @@ a {
     border-radius: 10px;
     background-color: #000000;
     color: #D6D6D6;
-    margin: 25px 0;
+    margin: 0 0 3rem 0;
     cursor: pointer;
   }
 
@@ -758,7 +757,7 @@ a {
   }
 
   #ul-projetos {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 3rem 0;
   }
 
@@ -936,13 +935,11 @@ a {
     flex-direction: column;
     color: #42C920;
     font-weight: 600;
-   
+   height: 100%;
 
   }
 
-  #projetos:nth-child(-n -3){
-    margin: 0%;
-  }
+  
 
   .editais,
   .criativa {
@@ -962,8 +959,9 @@ a {
 
   .projetos-content{
     margin: 0 0 1rem 0;
+ 
   }
-
+ 
   #projetos p {
     margin: 20px 0 40px 0;
   }
