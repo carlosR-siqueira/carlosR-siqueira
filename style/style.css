@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  
+
 
 }
 
@@ -15,9 +15,10 @@ body {
 
 
 
+
 li {
   list-style: none;
-  
+
 }
 
 header {
@@ -31,7 +32,7 @@ header {
   justify-content: space-between;
   box-shadow: 5px 5px 10px 5px #0000005e;
   z-index: 9999999;
-  
+
 }
 
 a {
@@ -87,7 +88,7 @@ a {
   align-items: center;
   background-color: #252628;
   padding: 50px 0;
-  
+
 
 }
 
@@ -170,7 +171,7 @@ a {
   background-color: #000000;
   text-align: center;
   width: 100%;
-  
+
 }
 
 .sobreMim-content {
@@ -240,21 +241,22 @@ a {
   text-align: center;
   color: #42C920;
   font-weight: 600;
-  font-size: 2rem;
-  padding: 60px 0 0 0;
+  
 
 }
 
 
 
 #projetos h1 {
-  margin: 0 0 50px 0;
+  margin: 70px 0 ;
+  font-size: 2rem;
 }
 
 
 #projetos h1,
 #projetos h5 {
   font-family: 'Orbitron', sans-serif;
+
 }
 
 #projetos p {
@@ -264,6 +266,8 @@ a {
   font-size: 1rem;
 }
 
+
+
 .projetos-content ul,
 .trabalhos-profissionais-lista ul {
   display: flex;
@@ -271,11 +275,10 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 50px;
+  margin-top: 50px 0;
   color: #d6d6d663;
   font-size: 1rem;
-  margin-left: 0;
-  margin-right: 0;
+  
 
 
 }
@@ -321,6 +324,11 @@ a {
   border-radius: 10px;
 }
 
+#ul-projetos {
+  
+  margin: 3rem 0 0 0;
+}
+
 .hidden {
   display: none;
 
@@ -339,7 +347,7 @@ a {
   object-fit: contain;
 }
 
-.slideshow-container{
+.slideshow-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -358,9 +366,10 @@ a {
 
 
 
-#ul-projetos-mobile,
+
 .projetos-verTodos-btn {
   display: none;
+
 }
 
 .btn-voltar-container {
@@ -432,7 +441,7 @@ a {
   transition: 0.5s;
 }
 
-.form-container{
+.form-container {
   display: flex;
   width: min-content;
 }
@@ -667,25 +676,20 @@ a {
     text-align: center;
     color: #42C920;
     font-weight: 600;
-    font-size: 1.5rem;
+    
     padding: 0px;
     height: 100%;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 
   }
 
-  .trabalhos-profissionais-lista ul {
-    flex-direction: column;
-  }
 
 
 
-  #ul-projetos {
-    display: none;
-  }
 
   #ul-projetos-mobile {
     display: flex;
+    margin: 0 0 20px 0;
   }
 
 
@@ -755,7 +759,17 @@ a {
 
   #ul-projetos {
     height: 100vh;
+    margin: 3rem 0;
   }
+
+  #projetos p {
+    margin: 20px 0 40px 0;
+  }
+
+  .project-hidden-mobile {
+    display: none !important;
+  }
+
 
 
 
@@ -805,19 +819,21 @@ a {
     left: -200%;
     background: #1f1e1e;
     box-shadow: 10px 10px 10px #00000075;
-    border-radius: 7px;
+
     width: 75%;
     height: 100%;
 
     text-align: left;
     gap: 30px;
     padding: 20px 0;
-    text-shadow: 2px 2px 15px#42C920;
+    
     font-size: 1.5rem;
     opacity: 0.95;
     transition: all 300ms ease-in-out;
 
   }
+
+
 
   .header-list li::after {
     content: none;
@@ -891,7 +907,7 @@ a {
 
   .sobreMim-content h1 {
     font-size: 1.7rem;
-   
+
   }
 
   .sobreMim-content p {
@@ -905,9 +921,9 @@ a {
   }
 
   .skillIcon {
-    width: 70px ;
+    width: 70px;
     margin: 5px;
-  
+
   }
 
   .curriculum-button:hover {
@@ -920,10 +936,12 @@ a {
     flex-direction: column;
     color: #42C920;
     font-weight: 600;
-    font-size: 1rem;
-    /* padding: 20px;
-    padding-top: 70px; */
+   
 
+  }
+
+  #projetos:nth-child(-n -3){
+    margin: 0%;
   }
 
   .editais,
@@ -933,19 +951,23 @@ a {
 
   }
 
-  #projetos h5 {
+  /* #projetos h5 {
     margin: 20px 0 0 0;
+  } */
+
+  .projetos-subTitle-1 {
+    font-size: 1.5rem;
+  
+  }
+
+  .projetos-content{
+    margin: 0 0 1rem 0;
   }
 
   #projetos p {
     margin: 20px 0 40px 0;
   }
 
-  .project-hidden-mobile {
-    visibility: hidden;
-
-
-  }
 
 
   .projetos-content:hover :not(:hover):not(img):not(label):not(a):not(header) {
@@ -960,6 +982,8 @@ a {
 
 
   }
+
+  
 
   .projetos-verTodos-btn:hover {
     color: #D6D6D6;
@@ -1042,7 +1066,3 @@ a {
     width: 100% !important;
   }
 }
-
-
-
-
