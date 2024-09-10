@@ -267,13 +267,15 @@ a {
 .projetos-content ul,
 .trabalhos-profissionais-lista ul {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  margin: 50px 0;
+  margin-top: 50px;
   color: #d6d6d663;
   font-size: 1rem;
-  padding: 20px;
+  margin-left: 0;
+  margin-right: 0;
 
 
 }
@@ -308,7 +310,7 @@ a {
 }
 
 .projeto-item {
-  width: 200px;
+  width: 250px;
   height: 150px;
   border-radius: 7px;
   margin: 25px;
@@ -317,7 +319,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  
 }
 
 .hidden {
