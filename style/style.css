@@ -93,9 +93,9 @@ a {
 }
 
 .img-profile-container {
-  width: 500px;
-  height: 500px;
-  border-radius: 100%;
+  width: 339px;
+  height: 452px;
+  border-radius: 24%;
   border: outset 0.7rem #42C920;
   box-shadow: -5px 10px 30px #000000;
   display: flex;
@@ -104,9 +104,9 @@ a {
 }
 
 .img-profile {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 22%;
   object-fit: contain;
 }
 
@@ -237,18 +237,19 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #1f1e1e;
   text-align: center;
   color: #42C920;
   font-weight: 600;
-  
+
 
 }
 
 
 
 #projetos h1 {
-  margin: 70px 0 ;
+  margin: 70px 0;
   font-size: 2rem;
 }
 
@@ -268,17 +269,20 @@ a {
 
 
 
+
 .projetos-content ul,
 .trabalhos-profissionais-lista ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 25px;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   margin-top: 50px 0;
   color: #d6d6d663;
   font-size: 1rem;
-  
+
 
 
 }
@@ -316,7 +320,7 @@ a {
   width: 250px;
   height: 150px;
   border-radius: 7px;
-  margin: 25px;
+  margin: 5px;
   background-color: #252628;
   background-position: center;
   background-repeat: no-repeat;
@@ -325,8 +329,10 @@ a {
 }
 
 #ul-projetos {
-  
+
   margin: 3rem 0 0 0;
+  display: flex;
+  align-items:center;
 }
 
 .hidden {
@@ -677,7 +683,7 @@ a {
     color: #42C920;
     font-weight: 600;
     height: 100%;
-   
+
 
 
   }
@@ -825,7 +831,7 @@ a {
     text-align: left;
     gap: 30px;
     padding: 20px 0;
-    
+
     font-size: 1.5rem;
     opacity: 0.95;
     transition: all 300ms ease-in-out;
@@ -935,11 +941,11 @@ a {
     flex-direction: column;
     color: #42C920;
     font-weight: 600;
-   height: 100%;
+    height: 100%;
 
   }
 
-  
+
 
   .editais,
   .criativa {
@@ -954,14 +960,14 @@ a {
 
   .projetos-subTitle-1 {
     font-size: 1.5rem;
-  
+
   }
 
-  .projetos-content{
+  .projetos-content {
     margin: 0 0 1rem 0;
- 
+
   }
- 
+
   #projetos p {
     margin: 20px 0 40px 0;
   }
@@ -981,7 +987,7 @@ a {
 
   }
 
-  
+
 
   .projetos-verTodos-btn:hover {
     color: #D6D6D6;
