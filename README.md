@@ -21,6 +21,6 @@
 ![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=dark)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=carlosR-siqueira&icon=2&color=3)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=CarlosSiqueira&label=Profile%20Views&color=3&icon=5&pretty=true)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
