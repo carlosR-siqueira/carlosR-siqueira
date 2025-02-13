@@ -588,7 +588,7 @@ a {
   width: 100%;
 }
 
-.final-footer p {
+.final-footer p, .currentYear {
   font-family: 'Orbitron', sans-serif;
 }
 
