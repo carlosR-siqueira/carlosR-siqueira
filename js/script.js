@@ -111,8 +111,8 @@ window.onload = function () {
   showSlides2();
 };
 
-document.addEventListener('DOMContentLoaded', function () { 
+
   var currentYear = new Date().getFullYear();
     document.querySelector('.currentYear').textContent = currentYear;
-})
+
 
